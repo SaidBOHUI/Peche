@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Typewriter } from 'react-simple-typewriter'
 
 const Intro = styled.div`
     width: auto;
@@ -36,7 +37,19 @@ const Description = () => {
                 Récemment, vous avez observé que votre partenaire ne vous respecte plus comme avant.<br /> Vous, doté d'un coeur de lion, modèle de virilité, de force et de justice n'êtes plus qu'un chat aux crocs émoussés.<br /> Vous souhaitez redevenir l'homme que vous étiez : fort, charismatique et qui la faisait se sentir... toute chose.<br />
                 Vous avez pensez à vous remettre à l'activité, et même à débuter un sport de combat.<br />
                 Il semblerait que vous ayez pris le problème à l'envers.<br />
-                N'écoutez pas votre miroir, <span>vous êtes l'homme que vous pensez être.</span><br /> Musclé, féroce et dominant. <span>Elle a juste besoin de le voir.</span><br />
+                N'écoutez pas votre miroir, <span>vous êtes 					
+                        <span>
+							<Typewriter
+							loop
+							cursor
+							cursorStyle = '_'
+							typeSpeed = {70}
+							deletespeed = {50}
+							delayspeed = {1000}
+							words={[' un champion.', ' milliardaire.', ' un roi.', ' l\'homme que vous pensez être.', ' charismatique.']}
+							/>
+						</span>
+                </span><br /> Musclé, féroce et dominant. <span>Elle a juste besoin de le voir.</span><br />
                 Grâce à nos Victimes, votre voeux est exaucé, vous pourrez enfin lui montrer de quel bois son homme se chauffe.
             </p>
         </Intro>

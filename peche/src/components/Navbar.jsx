@@ -9,7 +9,7 @@ const Navbar = () => {
 
 	return(
 		<NavStyle visible = {visible}>
-			<Blaze href = '#Accueil'>Pêche</Blaze>
+			<Blaze href = '#Accueil'>Peach</Blaze>
 			<MenuStyle visible = {visible}>
 				<MenuLink href="#Competences" onClick={()=> setvisible(!visible)}>Victimes</MenuLink>
 				<MenuLink href="#Experiences" onClick={()=> setvisible(!visible)}>Formules</MenuLink>
@@ -80,6 +80,10 @@ const Blaze = styled.a`
 	color: white;
 	cursor: pointer;
 	/* color: #FFAA00;  */
+	&:hover{
+		transition: 1s;
+		color :#1abc9c
+	}
 	@media(max-width: 660px){
 		display: none;
 	}
@@ -121,6 +125,11 @@ const MenuLink = styled.a`
 	text-align: center;
 	height: 50px;
 	padding: 0 1rem;
+
+	&:hover{
+			transition: 1s;
+			color :#1abc9c
+		}
 
 	&:nth-child(1) {
 		&:hover~${ShadowAnime}{
@@ -181,7 +190,8 @@ const Bar = styled.div`
 	@media(max-width:660px){
 	width: 2.5rem;
 	height: 0.2rem;
-	background:${({visible}) => visible ? '#1abc9c':'#151F27'} ;
+	/* background:${({visible}) => visible ? '#1abc9c':'#151F27'} ; */
+	background-color: #1abc9c;
 	z-index: 5;
 	position: relative;
 	border-radius: 5px;

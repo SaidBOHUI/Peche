@@ -18,7 +18,7 @@ const Network = styled.div`
     width: 15rem;
     div{
         &:hover{
-            transition: 2s;
+            transition: 1.5s;
             transform: rotateY(180deg)
         }
     }
