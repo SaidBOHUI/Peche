@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, {createGlobalStyle} from 'styled-components'
+import Navbar from './components/Navbar'
+import Bandeau from './components/Bandeau'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const GlobalStyle = createGlobalStyle`
+body{
+  margin: 0;
+  /* background: #2c3e50; */
+  	background-color: black;
+  font-family: 'Open Sans', 'sans-serif';
+  overflow-x:hidden;
+  color : white
 }
+`
+
+const App = () => {
+  return (
+    <>
+      <GlobalStyle />
+      <Navbar />
+      <Bandeau />
+    </>
+  )
+};
 
 export default App;
