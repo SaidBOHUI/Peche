@@ -1,6 +1,8 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
 import Navbar from './components/Navbar'
 import Bandeau from './components/Bandeau'
+import Description from './components/Description'
+import Footer from './components/Footer'
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -19,6 +21,8 @@ const App = () => {
       <GlobalStyle />
       <Navbar />
       <Bandeau />
+      <Description />
+      <Footer />
     </>
   )
 };
