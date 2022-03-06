@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import LoginForm from './components/Box/LoginForm'
+import LoginForm from './components/Box/LoginForm';
+import './App.css';
 
 function App() {
   const adminUser = {
@@ -31,6 +32,7 @@ function App() {
       name: "",
       email: ""
     })
+    setError("");
   }
   return (
     <div className="App">

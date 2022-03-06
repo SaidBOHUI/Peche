@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+	position: fixed;
+	width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: black;
+	z-index: 1;
+}
+.app{
+  display: flex;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-form{
+	border: white 3px solid;
+	width: 30rem;
+	padding: 3rem;
+	margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.form-submit{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+	color: black;
+	display: block;
+	width: 30rem;
+	height: 1.5rem;
+	margin: 2rem 0;
+	font-size: large;
+	font-weight: 700;
+}
+
+
+input[type=submit] {
+	 width: 10rem;
+	 border: 2px solid white;
+	 color: white;
+	 background-color: black;
+	 height: 4rem;
+	 margin: 2rem auto;
 }
