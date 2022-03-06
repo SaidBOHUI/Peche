@@ -9,12 +9,12 @@ const Navbar = () => {
 
 	return(
 		<NavStyle visible = {visible}>
-			<Blaze href = '#Accueil'>Peach</Blaze>
+			<Blaze href = '/'>Peach</Blaze>
 			<MenuStyle visible = {visible}>
-				<MenuLink href="#Competences" onClick={()=> setvisible(!visible)}>Victimes</MenuLink>
-				<MenuLink href="#Experiences" onClick={()=> setvisible(!visible)}>Formules</MenuLink>
-				<MenuLink href="#Portfolio" onClick={()=> setvisible(!visible)}>Connexion</MenuLink>
-				<MenuLink href="#Contact" onClick={()=> setvisible(!visible)}>Inscription</MenuLink>
+				<MenuLink href="/victims" onClick={()=> setvisible(!visible)}>Victimes</MenuLink>
+				<MenuLink href="/formules" onClick={()=> setvisible(!visible)}>Formules</MenuLink>
+				<MenuLink href="/connexion" onClick={()=> setvisible(!visible)}>Connexion</MenuLink>
+				<MenuLink href="inscription" onClick={()=> setvisible(!visible)}>Inscription</MenuLink>
 				<ShadowAnime></ShadowAnime>
 			</MenuStyle>
 			<BurgerStyle onClick={()=> setvisible(!visible)} visible = {visible}>
@@ -62,6 +62,7 @@ const NavStyle = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 15;
 	font-family: 'Open Sans', 'sans-serif';
 	@media(max-width: 660px){
 		/* height: 100vh; */
