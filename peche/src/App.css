@@ -14,14 +14,12 @@ body {
 	background: black;
 	z-index: 1;
 	height: 100vh;
-	display: flex;
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal */
 }
-.app{
-  display: flex;
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal */
+.center{
+	height: 100vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-form{

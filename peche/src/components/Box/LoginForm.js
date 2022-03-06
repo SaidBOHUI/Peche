@@ -9,6 +9,7 @@ function LoginForm({ Login, error }) {
         Login(details);
     }
   return (
+      <div className='center'>
     <form className="container-form" onSubmit={submitHandler}>
         <div classeName="form-inner container-form">
             <h2>Login</h2>
@@ -28,6 +29,7 @@ function LoginForm({ Login, error }) {
             <input type="submit" value="Connexion"/>
         </div>
     </form>
+    </div>
   )
 }
 

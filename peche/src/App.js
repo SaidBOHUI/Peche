@@ -23,7 +23,7 @@ function App() {
 
   } else {
     console.log("Ce compte n'existe pas");
-    setError("Ce compte n'existe pas");
+    setError("Ce compte n'existe pas ou le mot de passe et faux");
     }
   }
 
