@@ -13,16 +13,22 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background: black;
 	z-index: 1;
+	height: 100vh;
+	display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
 }
 .app{
-  display: flex;  
+  display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
 }
 
 .container-form{
 	border: white 3px solid;
 	width: 30rem;
 	padding: 3rem;
-	margin: auto;
+	/*margin: auto;*/
 }
 
 .form-submit{
